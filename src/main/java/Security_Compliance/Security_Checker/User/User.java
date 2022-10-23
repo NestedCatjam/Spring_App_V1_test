@@ -57,4 +57,8 @@ public class User {
         return Objects.equals(this.Id, user.Id) && Objects.equals(this.name, user.name)
                 && Objects.equals(this.role, user.role);
     }
+    @Override
+    public String toString() {
+        return "User{" + "id=" + this.getId() + ", name='" + this.getName() + '\'' + ", role='" + this.getRole() + '\'' + '}';
+    }
 }
